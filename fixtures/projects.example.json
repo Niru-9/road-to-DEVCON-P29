@@ -1,0 +1,22 @@
+[
+  {
+    "payout": "0xb76236C5158Ed92145d3ABFabABF9ba4E99F6717",
+    "name": "Marathi Solidity video series",
+    "metadataUri": "ipfs://bafyexamplemarathiseries"
+  },
+  {
+    "payout": "0x3f1bAcA971F3D54d28aA7A114b13662808d610fE",
+    "name": "Open-source DeFi risk dashboard",
+    "metadataUri": "ipfs://bafyexampledefirisk"
+  },
+  {
+    "payout": "0x75cBb5A1dE1789A019Ee545Bb218F465595cd181",
+    "name": "Public-goods funding literacy workshops",
+    "metadataUri": "ipfs://bafyexamplepublicgoods"
+  },
+  {
+    "payout": "0x6D0e8a296D844B170E8cEE513a40d2A5cA2A5f3a",
+    "name": "Community hardware attestation kit",
+    "metadataUri": "ipfs://bafyexamplehardware"
+  }
+]

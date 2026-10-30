@@ -1,0 +1,46 @@
+{
+  "network": "sepolia",
+  "chainId": 11155111,
+  "contract": "QuadraticFundingRound",
+  "address": "0x634740A6D3334e23c24B22F73C01e69431d8310F",
+  "deploymentBlock": 12024921,
+  "deploymentTx": "0x9920560939f964b6f4ecb6e39e5d7b146eb645528e2f252645959ed689cb5b9c",
+  "operator": "0x0d3477209913afFAF06CDe63Dd0F13f4C5728135",
+  "constructor": {
+    "initialEligibilityRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "startTime": 1793318400,
+    "endTime": 1793923200,
+    "initialMatchingPoolWei": "0"
+  },
+  "configuration": {
+    "eligibilityRoot": "0x8cb9e2e36fe9067175bda04ac3c341bbd275bd315a2380a3aab07c152a60cfbc",
+    "eligibilityLeafCount": 3,
+    "projectCount": 2,
+    "matchingPoolWei": "100000",
+    "transactions": {
+      "setEligibilityRoot": "0xf99b3637eb7c14475863eec61ff0ce21d8c9abf5c58ba5134799acf4d697d44f",
+      "registerProject0": "0x5a542b6458758bf083b8513678eccc620e121d744d6c0e3da1dad9d8c902f1de",
+      "registerProject1": "0xbd724ec13a17a65866d27f29211470c40a3cd82b667607ec87abba454e9f5821",
+      "fundPool": "0x3c223269732d48223a240aed9edf121817c1889d1234748f93f0d473b6a72db9"
+    }
+  },
+  "projects": [
+    {
+      "id": 0,
+      "payout": "0xF859C8B7462a9e30Ee4ec627ca2cAab1b1a04DF7",
+      "name": "Tamil and Kannada wallet-docs translations",
+      "metadataURI": "'' ''"
+    },
+    {
+      "id": 1,
+      "payout": "0xBc86656811F5D6e90AACE15B1cd9267658290a8D",
+      "name": "Marathi Solidity video series",
+      "metadataURI": "'' ''"
+    }
+  ],
+  "verifiedAtBlock": 12027466,
+  "deployedAt": "2026-10-30T06:35:48.000Z",
+  "configuredAt": "2026-10-30T15:07:48.000Z",
+  "status": "configured-awaiting-contributions",
+  "notes": "Verified on-chain at block 12027466: owner=0x0d3477209913afFAF06CDe63Dd0F13f4C5728135, startTime=1793318400 (2026-10-30T00:00:00Z), endTime=1793923200 (2026-11-06T00:00:00Z), eligibilityRoot=0x8cb9e2e36fe9067175bda04ac3c341bbd275bd315a2380a3aab07c152a60cfbc (3 leaves), projectCount=2, matchingPool=100000 wei, totalContributions=0, finalized=false. Two caveats: the pool is only 100000 wei (top up with fundPool; it is additive) and both projects have metadataURI='' '' (cosmetic, immutable). The allowlist is a 3-address bootstrap, not the real attendee list."
+}

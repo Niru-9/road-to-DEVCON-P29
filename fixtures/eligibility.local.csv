@@ -1,0 +1,4 @@
+address,label,source
+0x0d3477209913afFAF06CDe63Dd0F13f4C5728135,Operator,local-bootstrap
+0xF859C8B7462a9e30Ee4ec627ca2cAab1b1a04DF7,Wallet A,local-bootstrap
+0xBc86656811F5D6e90AACE15B1cd9267658290a8D,Wallet B,local-bootstrap
