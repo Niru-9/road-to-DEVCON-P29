@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .gradient-hero-mesh {
+    background: radial-gradient(circle at 75% 25%, rgba(225, 229, 172, 0.5) 0%, transparent 45%),
+                radial-gradient(circle at 85% 65%, rgba(106, 166, 218, 0.45) 0%, transparent 50%),
+                radial-gradient(circle at 55% 85%, rgba(219, 227, 233, 0.25) 0%, transparent 40%),
+                radial-gradient(circle at 40% 40%, rgba(31, 35, 20, 0.9) 0%, transparent 60%);
+    filter: blur(32px);
+  }
+
+  .mesh-card-gradient-1 {
+    background: radial-gradient(circle at 25% 25%, rgba(225, 229, 172, 0.75) 0%, transparent 60%),
+                radial-gradient(circle at 80% 80%, rgba(106, 166, 218, 0.65) 0%, transparent 55%),
+                linear-gradient(125deg, #191c10, #262b1a);
+  }
+
+  .mesh-card-gradient-2 {
+    background: radial-gradient(circle at 20% 75%, rgba(106, 166, 218, 0.8) 0%, transparent 55%),
+                radial-gradient(circle at 85% 20%, rgba(225, 229, 172, 0.55) 0%, transparent 50%),
+                linear-gradient(135deg, #262b1a, #11130b);
+  }
+
+  .mesh-card-gradient-3 {
+    background: radial-gradient(circle at 50% 50%, rgba(219, 227, 233, 0.8) 0%, transparent 60%),
+                radial-gradient(circle at 90% 10%, rgba(106, 166, 218, 0.5) 0%, transparent 50%),
+                linear-gradient(145deg, #1f2314, #191c10);
+  }
+
+  .mesh-card-gradient-4 {
+    background: radial-gradient(circle at 70% 30%, rgba(225, 229, 172, 0.75) 0%, transparent 55%),
+                radial-gradient(circle at 30% 70%, rgba(106, 166, 218, 0.7) 0%, transparent 55%),
+                linear-gradient(115deg, #11130b, #262b1a);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #11130B;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #262B1A;
+    border-radius: 9999px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #6AA6DA;
+  }
+}

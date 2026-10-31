@@ -13,8 +13,9 @@ backend/dist/
 *.tsbuildinfo
 
 # Local data and logs
-data/
-backend/data/
+/data/
+/backend/data/
+!frontend/src/data/
 *.db
 *.db-shm
 *.db-wal
@@ -41,6 +42,8 @@ Thumbs.db
 .idea/
 .vscode/
 *.swp
+.agents/
+.claude/
 
 # Coverage
 coverage/

@@ -6,10 +6,10 @@ results engine that anyone can re-run to check the math.
 
 **Status:** the contract is deployed on Sepolia at
 `0x634740A6D3334e23c24B22F73C01e69431d8310F` (block `12024921`), recorded in
-[`deployments/sepolia.json`](deployments/sepolia.json), and the backend passes its
-test suite. Publishing the eligibility root, registering projects, and funding the
+[`deployments/sepolia.json`](deployments/sepolia.json), the backend passes its
+test suite, and the complete Web3 frontend dApp is deployed in [`frontend/`](frontend/).
+Publishing the eligibility root, registering projects, and funding the
 pool are the remaining operator steps; see [`action.md`](action.md).
-The frontend is a later milestone; every number it needs is already exposed here.
 
 ---
 
@@ -41,6 +41,9 @@ The crowd scores `4×10²⁰`, the whale scores `1×10²⁰`, and an `100 ETH` p
 ## Repository layout
 
 ```
+frontend/
+  src/                               Vite + React 18 + Viem + Tailwind dApp
+  src/pages/                         Explore, Results engine, Attendee pass, Withdraw, Operator
 contracts/
   src/QuadraticFundingRound.sol      Core round contract (OpenZeppelin 5.6)
   test/QuadraticFundingRound.t.sol   Foundry acceptance + security tests
@@ -78,6 +81,12 @@ cd backend
 npm run typecheck
 npm test
 npm run build
+cd ..
+
+# 5. Start the frontend dApp
+cd frontend
+npm install
+npm run dev
 ```
 
 Start the API:
@@ -252,8 +261,8 @@ windows, double withdrawal, unauthorized registration, and reentrancy.
   root until the round ends. Contributions already made cannot be erased, but a
   malicious operator could block new contributors. This is documented in
   [`SECURITY.md`](SECURITY.md).
-- There is no frontend yet. The API and calldata endpoints are the integration
-  surface.
+- The frontend dApp is fully functional in `frontend/` and connects directly
+  to Sepolia via viem and browser wallets, with live quadratic calculation and Merkle proof generation.
 - SQLite is single-writer and intended for one backend instance. It is
   sufficient for a single round and trivial to replace with Postgres later.
 - No automated contract deployment, no private keys, no signing service.
